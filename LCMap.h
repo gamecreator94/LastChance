@@ -15,7 +15,7 @@ using namespace std;
 
 /*This class builds the map of the game it
 calls in the image of the full map and
-depending on the section of you choose it
+depending on the section you choose, it
 will call the image the is more indepth of
 the section.*/
 
@@ -30,11 +30,15 @@ class CampaignMap
         void buildSouthMap();
         void buildEastMap();
         void buildWestMap();
+        SDL_Window* screen;
+        SDL_Surface* screenPrint;
+        SDL_Surface* screenOutput;
 
     private:
         int mapWidth;
         int mapHeight;
-
+        bool gameWorks;
+        bool newGame;
 
     };
 

@@ -8,7 +8,6 @@
 #include <iomanip> // end of libiaries
 #include <fstream>
 #include <string>
-#include <stdio.h>
 #include <stdlib.h>
 #include <cstdlib>
 #include <unistd.h>
@@ -20,6 +19,10 @@ int main( int argc, char* args[] )
     {
 
     CampaignMap buildMap;
+
+    buildMap.buildMainMap();
+
+    SDL_Delay(5000);
 
     return 0;
 
