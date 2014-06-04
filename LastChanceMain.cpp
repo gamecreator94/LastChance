@@ -18,11 +18,31 @@ using namespace std;
 int main( int argc, char* args[] )
     {
 
+    bool runGame = true;
+    SDL_Event e;
+
     CampaignMap buildMap;
 
     buildMap.buildMainMap();
 
-    SDL_Delay(5000);
+    while( runGame )
+        {
+
+        while( SDL_PollEvent( &e ) != 0 )
+            {
+
+            if( e.type == SDL_QUIT )
+                {
+
+                runGame = false;
+
+                }// if( e.type == SDL_QUIT )
+
+            }// while( SDL_PollEvent( &e ) != 0 )
+
+        }// while( !runGame )
+
+
 
     return 0;
 
