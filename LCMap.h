@@ -26,13 +26,9 @@ class CampaignMap
         CampaignMap();
         ~CampaignMap();
         void buildMainMap();
-        void buildNorthMap();
-        void buildSouthMap();
-        void buildEastMap();
-        void buildWestMap();
         SDL_Window* screen;
         SDL_Surface* screenPrint;
-        SDL_Surface* screenOutput;
+        SDL_Surface* backGroundMapOutput;
 
     private:
         int mapWidth;

@@ -36,7 +36,7 @@ CampaignMap::CampaignMap()
 
     screenPrint = NULL;
 
-    screenOutput = NULL;
+    backGroundMapOutput = NULL;
 
     }// CampaignMap::CampaignMap()
 
